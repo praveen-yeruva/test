@@ -21,4 +21,4 @@ echo "REVISION= " "${REVISION}"
 TASK_ID=$(aws ecs list-tasks --cluster "${CLUSTER_NAME}" --service "${SERVICE_NAME}" --query "taskArns" --output text)
 aws ecs stop-task --cluster "${CLUSTER_NAME}" --task ${TASK_ID}
 
-aws ecs update-service --cluster "${CLUSTER_NAME}" --service "${SERVICE_NAME}" -force-new-deployment --task-definition "${TASK_DEFINITION_NAME}":"${REVISION}" --desired-count "${DESIRED_COUNT}"
+aws ecs update-service --cluster "${CLUSTER_NAME}" --service "${SERVICE_NAME}" --task-definition "${TASK_DEFINITION_NAME}":"${REVISION}" --desired-count "${DESIRED_COUNT}"
