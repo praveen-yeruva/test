@@ -16,8 +16,7 @@
     "cpu": "256",
     "memory": "256",
     "requiresCompatibilities": [
-             "FARGATE"
+             "ec2"
     ],
-    "networkMode": "awsvpc",
-    "executionRoleArn": ""
+    "networkMode": "default"
 }
