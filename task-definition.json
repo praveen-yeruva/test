@@ -1,8 +1,8 @@
 {
-    "family": "FAMILY",
+    "family": FAMILY,
     "containerDefinitions": [
         {
-            "name": "NAME",
+            "name": NAME,
             "image": "REPOSITORY_URI:BUILD_NUMBER",
             "cpu": 0,
             "portMappings": [
@@ -35,7 +35,7 @@
             "systemControls": []
         }
     ],
-    "executionRoleArn": "ROLE_ARN",
+    "executionRoleArn": ROLE_ARN,
     "volumes": [],
     "placementConstraints": [],
     "requiresCompatibilities": [
