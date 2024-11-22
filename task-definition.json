@@ -18,5 +18,6 @@
     "requiresCompatibilities": [
              "ec2"
     ],
-    "networkMode": "default"
+    "networkMode": "default",
+    "executionRoleArn": ""
 }
