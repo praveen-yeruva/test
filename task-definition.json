@@ -1,9 +1,9 @@
 {
-    "family": "nodejs",
+    "family": FAMILY,
     "containerDefinitions": [
         {
             "image": "REPOSITORY_URI:BUILD_NUMBER",
-            "name": "demo",
+            "name": NAME,
 	    "essential": true,
             "portMappings": [
                 {
@@ -19,5 +19,5 @@
              "ec2"
     ],
     "networkMode": "default",
-    "executionRoleArn": ""
+    "executionRoleArn": ROLE_ARN
 }
