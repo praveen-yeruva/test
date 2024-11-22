@@ -4,8 +4,8 @@ pipeline {
         AWS_ACCOUNT_ID="222744351276"
         AWS_DEFAULT_REGION="us-east-1"
 	    CLUSTER_NAME="jenkins-ecs-cluster"
-	    SERVICE_NAME="ecs-jenkins-cicd"
-	    TASK_DEFINITION_NAME="my-task-nginx"
+	    SERVICE_NAME="nodejs-jenkins"
+	    TASK_DEFINITION_NAME="nodejs"
 	    DESIRED_COUNT="1"
         IMAGE_REPO_NAME="demo"
         //Do not edit the variable IMAGE_TAG. It uses the Jenkins job build ID as a tag for the new image.
